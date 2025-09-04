@@ -25,4 +25,4 @@ JavaScript – dynamic features and interactivity
 
 Clone the repository:
 
-(https://github.com/msangee4/Nostra.git)
+(https://msangee4.github.io/Nostra/)
