@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nostra</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- TAILWIND CSS CDN LINK -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+        <!--Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <!-- OFFER SECTION -->
+        <section id="offer" class="p-2 bg-blue-950 flex gap-x-16 text-white justify-center">
+            <p>Sign Up and <b>GET 20% OFF</b> for your first Order</p>
+            <p id="offerClose" class="cursor-pointer">x</p>
+        </section>
+        <!-- NAV BAR -->
+        <nav class="bg-white p-3 flex items-center justify-between sticky top-0 z-10">
+            <h1 class="text-2xl"><b>Nostra</b></h1>
+            <svg id="menuicon" class="w-6 h-6 md:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                strokeWidth={1.5} stroke="currentColor" className="size-1">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <div class="hidden md:flex">
+                <ul class="flex gap-5">
+                    <li><a class="hover:underline" href="index.html">Home</a></li>
+                    <li><a class="hover:underline" href="#newArrival">New Arrival</a></li>
+                    <li><a class="hover:underline" href="#mostWanted">Most Wanted</a></li>
+                    <li><a class="hover:underline" href="collections.html">Collections</a></li>
+                    <li><a class="hover:underline" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- SIDE NAV BAR -->
+        <section id="sidenav" class="bg-blue-950 fixed z-20 top-0 transition-all duration-1000"
+            style="width:50%;height:100vh;left:-50%;">
+            <div class="text-right p-5">
+                <p id="close-nav" class="text-white inline cursor-pointer">X</p>
+            </div>
+            <ul class="p-5 flex flex-col gap-10 text-white">
+                <li><a class="hover:underline" href="index.html">Home</a></li>
+                <li><a class="hover:underline" href="#newArrival">New Arrival</a></li>
+                <li><a class="hover:underline" href="#mostWanted">Most Wanted</a></li>
+                <li><a class="hover:underline" href="collections.html">Collections</a></li>
+                <li><a class="hover:underline" href="contact.html">Contact Us</a></li>
+            </ul>
+        </section>
+        <section class="collections">
+            <div class="left">
+                <h3>Occasion</h3>
+                <ul>
+                    <li><input type="checkbox" name="Casual" id="casual"> Casual</li>
+                    <li><input type="checkbox" name="Formals" id="formals"> Formals</li>
+                    <li><input type="checkbox" name="Party" id="party"> Party</li>
+                </ul>
+                <h3>Colors</h3>
+                <ul>
+                    <li><input type="checkbox" name="Black" id="black"> Black</li>
+                    <li><input type="checkbox" name="Red" id="red"> Red</li>
+                    <li><input type="checkbox" name="Blue" id="blue"> Blue</li>
+                    <li><input type="checkbox" name="Brown" id="brown"> Brown</li>
+                </ul>
+                <h3>Arrivals</h3>
+                <ul>
+                    <li><input type="checkbox" name="Old" id="old"> Old</li>
+                    <li><input type="checkbox" name="New" id="new"> New</li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="border border-black rounded-xl p-2 m-3">
+                    <input id="search" type="text" style="width:95%; outline:none" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>                
+                <div class="right-grid" id="right-grid">
+                    <div class="price" data-occasion="casual" data-color="brown" data-arrival="old">
+                        <img src="images/Collections/1.webp" class="p-1 mb-2 w-12 h-12">
+                        <h1><b>Party Wear</b></h1>
+                        <p>399</p>
+                    </div>
+                    <div class="price" data-occasion="formals" data-color="black" data-arrival="old">
+                        <img src="images/Collections/2.webp" class="p-1 mb-2 w-12 h-12">
+                        <h1><b>Formal Wear</b></h1>
+                        <p>699</p>
+                    </div>
+                    <div class="price" data-occasion="party" data-color="blue" data-arrival="new">
+                        <img src="images/Collections/3.webp" class="p-1 mb-2 w-12 h-12">
+                        <h1><b>Formal Blue Shirt</b></h1>
+                        <p>299</p>
+                    </div>
+                    <div class="price" data-occasion="casual" data-color="brown" data-arrival="old">
+                        <img src="images/Collections/4.webp" class="p-1 mb-2 w-12 h-12">
+                        <h1><b>Casual Wear</b></h1>
+                        <p>499</p>
+                    </div>
+                    <div class="price" data-occasion="formals" data-color="blue" data-arrival="old">
+                        <img src="images/Collections/5.webp" class="p-1 mb-2 w-12 h-12">
+                        <h1><b>Party Wear</b></h1>
+                        <p>599</p>
+                    </div>
+                    <div class="price" data-occasion="party" data-color="blue" data-arrival="old">
+                        <img src="images/Collections/6.webp" class="p-1 mb-2 w-12 h-12">
+                        <h1><b>Casual Wear</b></h1>
+                        <p>299</p>
+                    </div>
+                    <div class="price" data-occasion="party" data-color="blue" data-arrival="new">
+                        <img src="images/Collections/7.webp" class="p-1 mb-2 w-12 h-12">
+                        <h1><b>Party Wear</b></h1>
+                        <p>499</p>
+                    </div>
+                    <div class="price" data-occasion="formals" data-color="red" data-arrival="old">
+                        <img src="images/Collections/8.webp" class="p-1 mb-2 w-12 h-12">
+                        <h1><b>Formal Red Shirt Products</b></h1>
+                        <p>499</p>
+                    </div>
+                    <div class="price" data-occasion="casual" data-color="black" data-arrival="new">
+                        <img src="images/Collections/9.jpeg" class="p-1 mb-2 w-12 h-12">
+                        <h1><b>Formal Pant</b></h1>
+                        <p>599</p>
+                    </div>
+                    <div class="price" data-occasion="casual" data-color="red" data-arrival="old">
+                        <img src="images/Collections/10.webp" class="p-1 mb-2 w-12 h-12">
+                        <h1><b>Coloured Shirt</b></h1>
+                        <p>299</p>
+                    </div>
+                    <div class="price" data-occasion="casual" data-color="blue" data-arrival="old">
+                        <img src="images/Collections/11.webp" class="p-1 mb-2 w-12 h-12">
+                        <h1><b>Printed Shirt</b></h1>
+                        <p>299</p>
+                    </div>
+                    <div class="price" data-occasion="party" data-color="black" data-arrival="new">
+                        <img src="images/Collections/12.jpeg" class="p-1 mb-2 w-12 h-12">
+                        <h1><b>Party Wear</b></h1>
+                        <p>399</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- News Letter -->
+        <section class="p-5 text-center">
+            <h1 class="font-bold text-3xl">Join Our News Letter</h1>
+            <p>Singup for our email newspaper to get exclusive discounts, updates, and more</p>
+            <input type="text" class="border border-black p-2 m-3" style="width:80%;"><br>
+            <button class="p-2 m-1 bg-black text-white rounded-md">Subscribe<b>-></b></button>
+        </section>
+        <section class="bg-gray-800 text-white">
+            <h1 class="p-5 text-2xl font-bold">Nostra</h1>
+            <p class="pl-5">The Standard Chunk of Lorem Ipsum used since the 1500s is reprodused below for those interest
+            </p>
+            <div class="social-media">
+                <img src="images/Social Media/instagram.png">
+                <img src="images/Social Media/twitter.png">
+                <img src="images/Social Media/facebook.png">
+            </div>
+            <p class="p-5">&copy; 2023 Nostra.com</p>
+        </section>
+        <!-- JAVASCIPT EXTENSION -->
+        <script src="collections.js"></script>
+    </body>
+</html>

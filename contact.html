@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- TAILWIND CSS CDN LINK -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .social-media
+    {
+        display:flex;
+        gap:40px;
+        padding:20px 10px 5px 40px;
+    }
+    .social-media img
+    {
+        width:20px;
+        filter: brightness(0) invert(1);
+    }
+    </style>
+</head>
+<body>
+    <nav class="bg-white p-3 flex items-center justify-between sticky top-0 z-10">
+        <h1 class="text-2xl"><b>Nostra</b></h1>
+        <svg id="menuicon" class="w-6 h-6 md:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            strokeWidth={1.5} stroke="currentColor" className="size-1">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <div class="hidden md:flex">
+            <ul class="flex gap-5">
+                <li><a class="hover:underline" href="index.html">Home</a></li>
+                <li><a class="hover:underline" href="newArrival.html">New Arrival</a></li>
+                <li><a class="hover:underline" href="mostWanted.html">Most Wanted</a></li>
+                <li><a class="hover:underline" href="collections.html">Collections</a></li>
+                <li><a class="hover:underline" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- SIDE NAV BAR -->
+    <section id="sidenav" class="bg-blue-950 fixed z-20 top-0 transition-all duration-1000" style="width:50%;height:100vh;left:-50%;">
+        <div class="text-right p-5">
+            <p id="close-nav" class="text-white inline cursor-pointer">X</p>
+        </div>
+        <ul class="p-5 flex flex-col gap-10 text-white">
+            <li><a class="hover:underline" href="index.html">Home</a></li>
+            <li><a class="hover:underline" href="newArrival.html">New Arrival</a></li>
+            <li><a class="hover:underline" href="mostWanted.html">Most Wanted</a></li>
+            <li><a class="hover:underline" href="collections.html">Collections</a></li>
+            <li><a class="hover:underline" href="contact.html">Contact Us</a></li>
+        </ul>
+    </section>
+    <section class="mt-5 mr-30 ml-30 mb-5 rounded-lg bg-gray-800">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h3 class="text-4xl font-bold text-white">Contact Us</h3>
+            <form action="#" class="space-y-8">
+                <div>
+                    <label for="name" class="block mb-2 text-sm font-medium text-white">Name</label>
+                    <input type="text" id="name" class="text-gray-900 text-sm block w-full p-2.5 bg-white" required>
+                </div>
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-white">Subject</label>
+                    <input type="email" id="email" class="text-gray-900 text-sm block w-full p-3 bg-white" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-white">Message</label>
+                    <textarea id="message" rows="6" class="text-gray-900 text-sm block w-full p-2.5 bg-white"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-700 py-3 px-5 text-sm font-medium text-center text-white rounded-lg">Submit</button>
+            </form>
+        </div>
+    </section>    
+    <!-- News Letter -->
+    <section class="p-5 text-center">
+        <h1 class="font-bold text-3xl">Join Our News Letter</h1>
+        <p>Singup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <input type="text" class="border border-black p-2 m-3" style="width:80%;"><br>
+        <button class="p-2 m-1 bg-black text-white rounded-md">Subscribe<b>-></b></button>        
+    </section>
+    <section class="bg-gray-800 text-white">
+        <h1 class="p-5 text-2xl font-bold">Nostra</h1>
+        <p class="pl-5">The Standard Chunk of Lorem Ipsum used since the 1500s is reprodused below for those interest</p>
+        <div class="social-media">
+            <img src="images/Social Media/instagram.png">
+            <img src="images/Social Media/twitter.png">
+            <img src="images/Social Media/facebook.png">
+        </div>
+        <p class="p-5">&copy; 2023 Nostra.com</p>
+    </section>
+    <!-- JAVASCIPT EXTENSION -->
+    <script src="contact.js"></script>
+</body>
+</html>

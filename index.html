@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- TAILWIND CSS CDN LINK -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+
+<body>
+    <!-- OFFER SECTION -->
+    <section id="offer" class="p-2 bg-blue-950 flex gap-x-16 text-white justify-center">
+        <p>Sign Up and <b>GET 20% OFF</b> for your first Order</p>
+        <p id="offerClose" class="cursor-pointer">x</p>
+    </section>
+    <!-- NAV BAR -->
+    <nav class="bg-white p-3 flex items-center justify-between sticky top-0 z-10">
+        <h1 class="text-2xl"><b>Nostra</b></h1>
+        <svg id="menuicon" class="w-6 h-6 md:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            strokeWidth={1.5} stroke="currentColor" className="size-1">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <div class="hidden md:flex">
+            <ul class="flex gap-5">
+                <li><a class="hover:underline" href="index.html">Home</a></li>
+                <li><a class="hover:underline" href="#newArrival">New Arrival</a></li>
+                <li><a class="hover:underline" href="#mostWanted">Most Wanted</a></li>
+                <li><a class="hover:underline" href="collections.html">Collections</a></li>
+                <li><a class="hover:underline" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- SIDE NAV BAR -->
+    <section id="sidenav" class="bg-blue-950 fixed z-20 top-0 transition-all duration-1000"
+        style="width:50%;height:100vh;left:-50%;">
+        <div class="text-right p-5">
+            <p id="close-nav" class="text-white inline cursor-pointer">X</p>
+        </div>
+        <ul class="p-5 flex flex-col gap-10 text-white">
+            <li><a class="hover:underline" href="index.html">Home</a></li>
+            <li><a class="hover:underline" href="#newArrival">New Arrival</a></li>
+            <li><a class="hover:underline" href="#mostWanted">Most Wanted</a></li>
+            <li><a class="hover:underline" href="collections.html">Collections</a></li>
+            <li><a class="hover:underline" href="contact.html">Contact Us</a></li>
+        </ul>
+    </section>
+    <section class="banner">
+        <div class="slider">
+            <div class="slide active">
+                <img src="images/Banner/1.jpeg" alt="img1" style="width:60%;height:400px;">
+                <img src="images/Banner/2.jpeg" alt="img2" style="width:40%;height:400px;">
+            </div>
+            <div class="slide">
+                <img src="images/Banner/3.jpeg" alt="img3" style="width:60%;height:400px;">
+                <img src="images/Banner/4.jpeg" alt="img4" style="width:40%;height:400px;">
+            </div>
+            <div class="slide">
+                <img src="images/Banner/5.jpeg" alt="img5" style="width:60%;height:400px;">
+                <img src="images/Banner/6.jpeg" alt="img6" style="width:40%;height:400px;">
+            </div>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+        </div>
+        <div class="btext">
+            <h1 style="font-size:55px;"><b>Level Up Your Style With Our</b></h1>
+            <p class="mb-3"><b>Summer Collections</b></p>
+            <button style="background-color:white;color:black;padding:10px;">Shop Now -></button>
+        </div>
+    </section>
+    <section id="brands">
+        <h1 class="m-5 text-2xl"><b>Brands</b></h1>
+        <div id="logo" class="m-5 grid grid-cols-6 gap-20">
+            <div class="text-center">
+                <img src="images/Brands/puma.png" alt="Puma" class="mx-auto w-12 h-12 object-contain">
+                <p>Puma</p>
+            </div>
+            <div class="text-center">
+                <img src="images/Brands/adidas.png" alt="Adidas" class="mx-auto w-12 h-12 object-contain">
+                <p>Adidas</p>
+            </div>
+            <div class="text-center">
+                <img src="images/Brands/simple.png" alt="Simple" class="mx-auto w-12 h-12 object-contain">
+                <p>Simple</p>
+            </div>
+            <div class="text-center">
+                <img src="images/Brands/leaves.png" alt="Leaves" class="mx-auto w-12 h-12 object-contain">
+                <p>Leaves</p>
+            </div>
+            <div class="text-center">
+                <img src="images/Brands/behance.png" alt="Behance" class="mx-auto w-12 h-12 object-contain">
+                <p>Behance</p>
+            </div>
+            <div class="text-center">
+                <img src="images/Brands/twitch.png" alt="Twitch" class="mx-auto w-12 h-12 object-contain">
+                <p>Twitch</p>
+            </div>
+        </div>
+        <div class="flex ml-5 mb-8">
+            <div style="width:50%;">
+                <h2 class="text-3xl"><b>We Provide Best</b></h2>
+                <h2 class="text-3xl"><b>Customer Experience</b></h2>
+            </div>
+            <div style="width:50%;font-size:larger;">
+                <p>|| We Ensure That Our Customer Have The Best Shopping Experience</p>
+            </div>
+        </div>
+        <div class="flex gap-5 justify-between m-5">
+            <div class="card">
+                <img src="images/Brands/check.png" class="p-1 mb-2 w-12 h-12">
+                <h1><b>Original Products</b></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, itaque</p>
+            </div>
+            <div class="card">
+                <img src="images/Brands/happiness.png" class="p-1 mb-2 w-12 h-12">
+                <h1><b>Original Products</b></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, itaque</p>
+            </div>
+            <div class="card">
+                <img src="images/Brands/hand.png" class="p-1 mb-2 w-12 h-12">
+                <h1><b>Original Products</b></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, itaque</p>
+            </div>
+            <div class="card">
+                <img src="images/Brands/delivery.png" class="p-1 mb-2 w-12 h-12">
+                <h1><b>Original Products</b></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, itaque</p>
+            </div>
+        </div>
+    </section>
+    <section id="newArrival">
+        <h1 class="m-5 text-2xl"><b>New Arrivals</b></h1>
+        <div class="flex justify-between m-5">
+            <div class="relative w-80 h-80">
+                <img src="images/New Arrival/1.jpeg" alt="img" class="w-full h-full rounded-lg">
+                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center rounded-lg">
+                    <button class="bg-white text-black font-semibold p-2 rounded-lg shadow-md">Shop Now →</button>
+                </div>
+            </div>
+            <div class="relative w-80 h-80">
+                <img src="images/New Arrival/2.webp" alt="img" class="w-full h-full rounded-lg">
+                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center rounded-lg">
+                    <button class="bg-white text-black font-semibold p-2 rounded-lg shadow-md">Shop Now →</button>
+                </div>
+            </div>
+            <div class="relative w-80 h-80">
+                <img src="images/New Arrival/3.webp" alt="img" class="w-full h-full rounded-lg">
+                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center rounded-lg">
+                    <button class="bg-white text-black font-semibold p-2 rounded-lg shadow-md">Shop Now →</button>
+                </div>
+            </div>
+            <div class="relative w-80 h-80">
+                <img src="images/New Arrival/4.jpeg" alt="img" class="w-full h-full rounded-lg">
+                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center rounded-lg">
+                    <button class="bg-white text-black font-semibold p-2 rounded-lg">Shop Now →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="mostWanted" class="m-5 relative">
+        <h1 class="m-5 text-2xl"><b>Most Wanted</b></h1>
+        <button class="slider-btn left" onclick="slideLeft()"></button>
+        <div class="slider-container" id="slider">
+            <div class="wanted">
+                <img src="images/Most Wanted/1.webp">
+                <p>sale</p>
+                <img class="like" src="images/Most Wanted/like.png" alt="">
+            </div>
+            <div class="wanted">
+                <img src="images/Most Wanted/2.webp">
+                <p>sale</p>
+                <img class="like" src="images/Most Wanted/like.png" alt="">
+            </div>
+            <div class="wanted">
+                <img src="images/Most Wanted/3.webp">
+                <p>sale</p>
+                <img class="like" src="images/Most Wanted/like.png" alt="">
+            </div>
+            <div class="wanted">
+                <img src="images/Most Wanted/4.webp">
+                <p>sale</p>
+                <img class="like" src="images/Most Wanted/like.png" alt="">
+            </div>
+            <div class="wanted">
+                <img src="images/Most Wanted/5.webp">
+                <p>sale</p>
+                <img class="like" src="images/Most Wanted/like.png" alt="">
+            </div>
+            <div class="wanted">
+                <img src="images/Most Wanted/6.webp">
+                <p>sale</p>
+                <img class="like" src="images/Most Wanted/like.png" alt="">
+            </div>
+            <div class="wanted">
+                <img src="images/Most Wanted/7.webp">
+                <p>sale</p>
+                <img class="like" src="images/Most Wanted/like.png" alt="">
+            </div>
+            <div class="wanted">
+                <img src="images/Most Wanted/8.webp">
+                <p>sale</p>
+                <img class="like" src="images/Most Wanted/like.png" alt="">
+            </div>
+        </div>
+        <button class="slider-btn right" onclick="slideRight()"></button>
+    </section>
+    <section>
+        <div class="limited">
+            <img src="images/limited.jpeg" alt="image">
+            <div class="details">
+                <h1><b>Limited Offer</b></h1>
+                <p><b>35% OFF On This For The First 30 Customers</b></p>
+                <button class="bg-white text-black p-1 m-2 w-28 rounded-md">Shop Now →</button>
+            </div>
+        </div>
+    </section>
+    <!-- News Letter -->
+    <section class="p-5 text-center">
+        <h1 class="font-bold text-3xl">Join Our News Letter</h1>
+        <p>Singup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <input type="text" class="border border-black p-2 m-3" style="width:80%;"><br>
+        <button class="p-2 m-1 bg-black text-white rounded-md">Subscribe<b>-></b></button>
+    </section>
+    <section class="bg-gray-800 text-white">
+        <h1 class="p-5 text-2xl font-bold">Nostra</h1>
+        <p class="pl-5">The Standard Chunk of Lorem Ipsum used since the 1500s is reprodused below for those interest
+        </p>
+        <div class="social-media">
+            <img src="images/Social Media/instagram.png">
+            <img src="images/Social Media/twitter.png">
+            <img src="images/Social Media/facebook.png">
+        </div>
+        <p class="p-5">&copy; 2023 Nostra.com</p>
+    </section>
+    <!-- JAVASCIPT EXTENSION -->
+    <script src="index.js"></script>
+</body>
+
+</html>
